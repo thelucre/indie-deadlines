@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Indie Deadlines</title>
+  <meta name="description" content="A crowd-sourced calendar of important deadlines for indie game creators">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <style>
+    body {
+      padding: 15px;
+      font-family: 'Helvetica', 'Arial', sans-serif;
+    }
+
+    td,
+    th {
+      padding: 6px 4px;
+      text-align: left;
+    }
+
+    tr:nth-of-type(odd) {
+      background-color: #f6f6f6;
+    }
+  </style>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $.get('/data.json', function (data, err) {
+
+        var $t = $('table')
+
+        data.events.forEach(function (event) {
+          var $tr = $('<tr></tr>')
+
+          $tr.append($("<td><a href='" + event.submissionURL + "' target='_blank'>" + event.name + "</a></td>"))
+          $tr.append($("<td></td>").text(event.location))
+          $tr.append($("<td></td>").text(event.region))
+          $tr.append($("<td></td>").text(event.deadline))
+          $tr.append($("<td></td>").text(event.eventDate))
+          $tr.append($("<td></td>").text(event.fee))
+          $tr.append($("<td></td>").text(event.platforms))
+
+          $t.append($tr)
+        })
+      });
+    });
+  </script>
+</head>
+
+<body>
+  <header style="text-align: center; padding: 50px 20px;">
+    <h1>Indie Deadlines</h1>
+    <p>A crowd-sourced calendar of important deadlines for indie game creators</p>
+  </header>
+
+
+  <table>
+    <tr>
+      <th>Event</th>
+      <th>Location</th>
+      <th>Region</th>
+      <th>Deadline</th>
+      <th>Event date</th>
+      <th>Fee</th>
+      <th>Platforms</th>
+    </tr>
+  </table>
+</body>
+
+</html>
