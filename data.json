@@ -25,7 +25,7 @@
       "submissionURL": "http://pixelpopfestival.com/exhibitor-submissions/",
       "location": "St. Louis, USA",
       "region": "Worldwide",
-      "deadline": "25 May",
+      "deadline": "May 25",
       "eventDate": "July 28 – 29",
       "fee": "Free",
       "platforms": "Digital, Tabletop, Experimental"
@@ -35,7 +35,7 @@
       "submissionURL": "http://indiemegabooth.com/pax-west-2018-submissions-now-open/",
       "location": "Seattle, USA",
       "region": "Worldwide",
-      "deadline": "23 May",
+      "deadline": "May 23",
       "eventDate": "Aug 31 – Sep 3",
       "fee": "$50",
       "platforms": "Digital"
@@ -49,6 +49,27 @@
       "eventDate": "Oct 25 - 28",
       "fee": "$10",
       "platforms": "-"
+    },
+    {
+      "name": "Play NYC",
+      "submissionURL": "https://www.play-nyc.com/",
+      "location": "NYC, USA",
+      "region": "Worldwide",
+      "deadline": "unlisted but still open",
+      "eventDate": "Aug 11 - 12",
+      "fee": "$10",
+      "platforms": "-"
+    },
+    {
+      "name": "MAG West Panel",
+      "submissionURL": "https://west2018.uber.magfest.org/uber/panel_applications/index",
+      "location": "Santa Clara, USA",
+      "region": "Worldwide",
+      "deadline": "July 3",
+      "eventDate": "Aug 10 - 12",
+      "fee": "free",
+      "platforms": ""
     }
+
   ]
 }
